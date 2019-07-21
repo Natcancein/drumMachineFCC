@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactDOM from 'react-dom';
 import "./app.css";
 import styled from "styled-components";
 import Display from "../presentational/Display";
@@ -28,8 +29,8 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleDisplay = this.handleDisplay.bind(this);
   }
-  handleDisplay = event => {
-    const value = event.currentTarget.id;
+  handleDisplay = (e) => {
+    const value = e.currentTarget.id;
     this.setState({
       currentSoundId: `This sound now: ${value}`
     });
@@ -68,6 +69,11 @@ class App extends Component {
     );
   }
 }
+ //export default App;
 
-export default App;
+let container = document.getElementById('root');
+let component = <App />;
+
+ReactDOM.render(component, container);
+ 
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom';
-import "./app.css";
+import "./../../../styles/App.css";
 import styled from "styled-components";
 import Display from "../presentational/Display";
 import Button from "../presentational/Button";

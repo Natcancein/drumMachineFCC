@@ -2,7 +2,8 @@
 
 This project was made without [Create React App](https://github.com/facebook/create-react-app).
 
-This is [publish](https://jovial-curran-05179c.netlify.com/)
+Here is [publish](https://jovial-curran-05179c.netlify.com/)
+
 I used:
 - [Webpack 4](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)

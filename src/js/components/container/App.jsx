@@ -16,7 +16,7 @@ const Wrapper = styled.section`
 
 class App extends Component {
   componentDidMount() {
-    console.log(this.audio)
+    //console.log(this.audio)
     window.focus()
   } 
 
@@ -37,11 +37,12 @@ class App extends Component {
   };
 
   handleClick = () => {
-    console.log("must sound", this.props.drumKey);
-    this.audio.play();
+    var sound= this.props.drumKey;
+    console.log("must sound", this.audio);
     this.audio.currentTime = 0;
      // problem 1
-    this.props.handleDisplay(this.props.drumKey);
+    this.props.handleDisplay(sound;
+   // console.log(result);
   };
 
   render() {
@@ -61,6 +62,7 @@ class App extends Component {
                 alt={button.name}
                 // problem 2, i think
                 result={ref => (this.audio = ref)}
+                
               />
             ))}
           </div>

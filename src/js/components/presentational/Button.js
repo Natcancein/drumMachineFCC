@@ -16,6 +16,7 @@ const Button = ({ alt, image, drumKey, handleClick, handleDisplay, src, result }
       height="120" width="120"/>
       <audio 
       id={drumKey}
+      key={drumKey}
       src={src} 
       autoPlay
       type="audio/mp3"
